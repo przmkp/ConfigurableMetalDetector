@@ -18,7 +18,7 @@ namespace ConfigurableMetalDetector
 			Main.tileValue[37] = (short)ModContent.GetInstance<Config>().MeteoriteValue;
 			Main.tileValue[22] = (short)ModContent.GetInstance<Config>().DemoniteValue;
 			Main.tileValue[204] = (short)ModContent.GetInstance<Config>().CrimtaneValue;
-			Main.tileValue[407] = (short)ModContent.GetInstance<Config>().FossilValue;
+			Main.tileValue[407] = (short)ModContent.GetInstance<Config>().SturdyFossilValue;
 			Main.tileValue[8] = (short)ModContent.GetInstance<Config>().GoldValue;
 			Main.tileValue[169] = (short)ModContent.GetInstance<Config>().PlatinumValue;
 			Main.tileValue[21] = (short)ModContent.GetInstance<Config>().ChestValue;

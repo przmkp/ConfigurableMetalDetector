@@ -86,7 +86,7 @@ namespace ConfigurableMetalDetector
         [DefaultValue(350)]
         [Range(0, 5000)]
         [Increment(10)]
-        public int FossilValue;
+        public int SturdyFossilValue;
 
         [Label("Gold Ore")]
         [DefaultValue(400)]
