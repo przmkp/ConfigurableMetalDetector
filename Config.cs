@@ -22,139 +22,139 @@ namespace ConfigurableMetalDetector
     {
         public override ConfigScope Mode => ConfigScope.ClientSide;
 
-        [Label("Pot")]
+        [Label("[i:474] Pot")]
         [DefaultValue(100)]
         [Range(0, 5000)]
         [Increment(10)]
         public int PotValue;
 
-        [Label("Copper Ore")]
+        [Label("[i:12] Copper Ore")]
         [DefaultValue(200)]
         [Range(0, 5000)]
         [Increment(10)]
         public int CopperValue;
 
-        [Label("Tin Ore")]
+        [Label("[i:699] Tin Ore")]
         [DefaultValue(210)]
         [Range(0, 5000)]
         [Increment(10)]
         public int TinValue;
 
-        [Label("Iron Ore")]
+        [Label("[i:11] Iron Ore")]
         [DefaultValue(220)]
         [Range(0, 5000)]
         [Increment(10)]
         public int IronValue;
 
-        [Label("Lead Ore")]
+        [Label("[i:700] Lead Ore")]
         [DefaultValue(230)]
         [Range(0, 5000)]
         [Increment(10)]
         public int LeadValue;
 
-        [Label("Silver Ore")]
+        [Label("[i:14] Silver Ore")]
         [DefaultValue(240)]
         [Range(0, 5000)]
         [Increment(10)]
         public int SilverValue;
 
-        [Label("Tungsten Ore")]
+        [Label("[i:701] Tungsten Ore")]
         [DefaultValue(250)]
         [Range(0, 5000)]
         [Increment(10)]
         public int TungstenValue;
 
-        [Label("Meteorite")]
+        [Label("[i:116] Meteorite")]
         [DefaultValue(300)]
         [Range(0, 5000)]
         [Increment(10)]
         public int MeteoriteValue;
 
-        [Label("Demonite Ore")]
+        [Label("[i:56] Demonite Ore")]
         [DefaultValue(310)]
         [Range(0, 5000)]
         [Increment(10)]
         public int DemoniteValue;
 
-        [Label("Crimtane Ore")]
+        [Label("[i:880] Crimtane Ore")]
         [DefaultValue(320)]
         [Range(0, 5000)]
         [Increment(10)]
         public int CrimtaneValue;
 
-        [Label("Sturdy Fossil")]
+        [Label("[i:3380] Sturdy Fossil")]
         [DefaultValue(350)]
         [Range(0, 5000)]
         [Increment(10)]
         public int SturdyFossilValue;
 
-        [Label("Gold Ore")]
+        [Label("[i:13] Gold Ore")]
         [DefaultValue(400)]
         [Range(0, 5000)]
         [Increment(10)]
         public int GoldValue;
 
-        [Label("Platinum Ore")]
+        [Label("[i:702] Platinum Ore")]
         [DefaultValue(410)]
         [Range(0, 5000)]
         [Increment(10)]
         public int PlatinumValue;
 
-        [Label("Chest")]
+        [Label("[i:48] Chest")]
         [DefaultValue(500)]
         [Range(0, 5000)]
         [Increment(10)]
         public int ChestValue;
 
-        [Label("Cobalt Ore")]
+        [Label("[i:364] Cobalt Ore")]
         [DefaultValue(600)]
         [Range(0, 5000)]
         [Increment(10)]
         public int CobaltValue;
 
-        [Label("Palladium Ore")]
+        [Label("[i:1104] Palladium Ore")]
         [DefaultValue(610)]
         [Range(0, 5000)]
         [Increment(10)]
         public int PalladiumValue;
 
-        [Label("Mythril Ore")]
+        [Label("[i:365] Mythril Ore")]
         [DefaultValue(620)]
         [Range(0, 5000)]
         [Increment(10)]
         public int MythrilValue;
 
-        [Label("Orichalcum Ore")]
+        [Label("[i:1105] Orichalcum Ore")]
         [DefaultValue(630)]
         [Range(0, 5000)]
         [Increment(10)]
         public int OrichalcumValue;
 
-        [Label("Adamantite Ore")]
+        [Label("[i:366] Adamantite Ore")]
         [DefaultValue(640)]
         [Range(0, 5000)]
         [Increment(10)]
         public int AdamantiteValue;
 
-        [Label("Titanium Ore")]
+        [Label("[i:1106] Titanium Ore")]
         [DefaultValue(650)]
         [Range(0, 5000)]
         [Increment(10)]
         public int TitaniumValue;
 
-        [Label("Chlorophyte Ore")]
+        [Label("[i:947] Chlorophyte Ore")]
         [DefaultValue(700)]
         [Range(0, 5000)]
         [Increment(10)]
         public int ChlorophyteValue;
 
-        [Label("Life Crystal")]
+        [Label("[i:29] Life Crystal")]
         [DefaultValue(510)]
         [Range(0, 5000)]
         [Increment(10)]
         public int LifeCrystalValue;
 
-        [Label("Life Fruit")]
+        [Label("[i:1291] Life Fruit")]
         [DefaultValue(810)]
         [Range(0, 5000)]
         [Increment(10)]
