@@ -159,5 +159,35 @@ namespace ConfigurableMetalDetector
         [Range(0, 5000)]
         [Increment(10)]
         public int LifeFruitValue;
+
+        public override void OnChanged()
+        {
+            Main.tileValue[28] = (short)PotValue;
+            Main.tileValue[7] = (short)CopperValue;
+            Main.tileValue[166] = (short)TinValue;
+            Main.tileValue[6] = (short)IronValue;
+            Main.tileValue[167] = (short)LeadValue;
+            Main.tileValue[9] = (short)SilverValue;
+            Main.tileValue[168] = (short)TungstenValue;
+            Main.tileValue[37] = (short)MeteoriteValue;
+            Main.tileValue[22] = (short)DemoniteValue;
+            Main.tileValue[204] = (short)CrimtaneValue;
+            Main.tileValue[407] = (short)SturdyFossilValue;
+            Main.tileValue[8] = (short)GoldValue;
+            Main.tileValue[169] = (short)PlatinumValue;
+            Main.tileValue[21] = (short)ChestValue;
+            Main.tileValue[467] = (short)ChestValue;
+            Main.tileValue[441] = (short)ChestValue;
+            Main.tileValue[468] = (short)ChestValue;
+            Main.tileValue[107] = (short)CobaltValue;
+            Main.tileValue[221] = (short)PalladiumValue;
+            Main.tileValue[108] = (short)MythrilValue;
+            Main.tileValue[222] = (short)OrichalcumValue;
+            Main.tileValue[111] = (short)AdamantiteValue;
+            Main.tileValue[223] = (short)TitaniumValue;
+            Main.tileValue[211] = (short)ChlorophyteValue;
+            Main.tileValue[12] = (short)LifeCrystalValue;
+            Main.tileValue[236] = (short)LifeFruitValue;
+        }
     }
 }
