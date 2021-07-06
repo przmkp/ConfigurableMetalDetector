@@ -160,6 +160,47 @@ namespace ConfigurableMetalDetector
         [Increment(10)]
         public int LifeFruitValue;
 
+        [Header("Gems")]
+        [Label("Enable gem detection")]
+        [DefaultValue(false)]
+        public bool GemsEnabled;
+
+        [Label("[i:181] Amethyst")]
+        [DefaultValue(420)]
+        [Range(0, 5000)]
+        [Increment(10)]
+        public int AmethystValue;
+
+        [Label("[i:180] Topaz")]
+        [DefaultValue(430)]
+        [Range(0, 5000)]
+        [Increment(10)]
+        public int TopazValue;
+
+        [Label("[i:177] Sapphire")]
+        [DefaultValue(440)]
+        [Range(0, 5000)]
+        [Increment(10)]
+        public int SapphireValue;
+
+        [Label("[i:179] Emerald")]
+        [DefaultValue(450)]
+        [Range(0, 5000)]
+        [Increment(10)]
+        public int EmeraldValue;
+
+        [Label("[i:178] Ruby")]
+        [DefaultValue(460)]
+        [Range(0, 5000)]
+        [Increment(10)]
+        public int RubyValue;
+
+        [Label("[i:182] Diamond")]
+        [DefaultValue(470)]
+        [Range(0, 5000)]
+        [Increment(10)]
+        public int DiamondValue;
+
         public override void OnChanged()
         {
             Main.tileValue[28] = (short)PotValue;
@@ -188,6 +229,21 @@ namespace ConfigurableMetalDetector
             Main.tileValue[211] = (short)ChlorophyteValue;
             Main.tileValue[12] = (short)LifeCrystalValue;
             Main.tileValue[236] = (short)LifeFruitValue;
+
+            if (GemsEnabled)
+            {
+                Main.tileValue[67] = (short)AmethystValue;
+                Main.tileValue[66] = (short)TopazValue;
+                Main.tileValue[63] = (short)SapphireValue;
+                Main.tileValue[65] = (short)EmeraldValue;
+                Main.tileValue[64] = (short)RubyValue;
+                Main.tileValue[68] = (short)DiamondValue;
+            }
+            else
+            {
+                for (int i = 63; i <= 68; i++)
+                    Main.tileValue[i] = 0;
+            }
         }
     }
 }

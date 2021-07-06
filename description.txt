@@ -3,3 +3,5 @@ Configurable Metal Detector is a simple mod that allows you to configure values 
 This mod has been created to change the behaviour of this item that prioritized Life Crystal over Hardmode ores, then expanded to cover all (vanilla) items detectable by this accessory.
 
 The changes in the config should start working immediately.
+
+New: Added an option to detect gems.
