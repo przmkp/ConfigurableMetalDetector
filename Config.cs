@@ -28,6 +28,18 @@ namespace ConfigurableMetalDetector
         [Increment(10)]
         public int PotValue;
 
+        [Label("[i:3380] Sturdy Fossil")]
+        [DefaultValue(150)]
+        [Range(0, 5000)]
+        [Increment(10)]
+        public int SturdyFossilValue;
+
+        [Label("[i:3347] Desert Fossil")]
+        [DefaultValue(150)]
+        [Range(0, 5000)]
+        [Increment(10)]
+        public int DesertFossilValue;
+
         [Label("[i:12] Copper Ore")]
         [DefaultValue(200)]
         [Range(0, 5000)]
@@ -64,47 +76,47 @@ namespace ConfigurableMetalDetector
         [Increment(10)]
         public int TungstenValue;
 
-        [Label("[i:116] Meteorite")]
-        [DefaultValue(300)]
-        [Range(0, 5000)]
-        [Increment(10)]
-        public int MeteoriteValue;
-
-        [Label("[i:56] Demonite Ore")]
-        [DefaultValue(310)]
-        [Range(0, 5000)]
-        [Increment(10)]
-        public int DemoniteValue;
-
-        [Label("[i:880] Crimtane Ore")]
-        [DefaultValue(320)]
-        [Range(0, 5000)]
-        [Increment(10)]
-        public int CrimtaneValue;
-
-        [Label("[i:3380] Sturdy Fossil")]
-        [DefaultValue(350)]
-        [Range(0, 5000)]
-        [Increment(10)]
-        public int SturdyFossilValue;
-
         [Label("[i:13] Gold Ore")]
-        [DefaultValue(400)]
+        [DefaultValue(260)]
         [Range(0, 5000)]
         [Increment(10)]
         public int GoldValue;
 
         [Label("[i:702] Platinum Ore")]
-        [DefaultValue(410)]
+        [DefaultValue(270)]
         [Range(0, 5000)]
         [Increment(10)]
         public int PlatinumValue;
+
+        [Label("[i:56] Demonite Ore")]
+        [DefaultValue(300)]
+        [Range(0, 5000)]
+        [Increment(10)]
+        public int DemoniteValue;
+
+        [Label("[i:880] Crimtane Ore")]
+        [DefaultValue(310)]
+        [Range(0, 5000)]
+        [Increment(10)]
+        public int CrimtaneValue;
+
+        [Label("[i:116] Meteorite")]
+        [DefaultValue(400)]
+        [Range(0, 5000)]
+        [Increment(10)]
+        public int MeteoriteValue;
 
         [Label("[i:48] Chest")]
         [DefaultValue(500)]
         [Range(0, 5000)]
         [Increment(10)]
         public int ChestValue;
+
+        [Label("[i:3665] Trapped Chest")]
+        [DefaultValue(500)]
+        [Range(0, 5000)]
+        [Increment(10)]
+        public int TrappedChestValue;
 
         [Label("[i:364] Cobalt Ore")]
         [DefaultValue(600)]
@@ -147,6 +159,12 @@ namespace ConfigurableMetalDetector
         [Range(0, 5000)]
         [Increment(10)]
         public int ChlorophyteValue;
+
+        [Label("[i:947] Strange Plant")]
+        [DefaultValue(750)]
+        [Range(0, 5000)]
+        [Increment(10)]
+        public int StrangePlantValue;
 
         [Label("[i:29] Life Crystal")]
         [DefaultValue(510)]
@@ -203,46 +221,48 @@ namespace ConfigurableMetalDetector
 
         public override void OnChanged()
         {
-            Main.tileValue[28] = (short)PotValue;
-            Main.tileValue[7] = (short)CopperValue;
-            Main.tileValue[166] = (short)TinValue;
-            Main.tileValue[6] = (short)IronValue;
-            Main.tileValue[167] = (short)LeadValue;
-            Main.tileValue[9] = (short)SilverValue;
-            Main.tileValue[168] = (short)TungstenValue;
-            Main.tileValue[37] = (short)MeteoriteValue;
-            Main.tileValue[22] = (short)DemoniteValue;
-            Main.tileValue[204] = (short)CrimtaneValue;
-            Main.tileValue[407] = (short)SturdyFossilValue;
-            Main.tileValue[8] = (short)GoldValue;
-            Main.tileValue[169] = (short)PlatinumValue;
-            Main.tileValue[21] = (short)ChestValue;
-            Main.tileValue[467] = (short)ChestValue;
-            Main.tileValue[441] = (short)ChestValue;
-            Main.tileValue[468] = (short)ChestValue;
-            Main.tileValue[107] = (short)CobaltValue;
-            Main.tileValue[221] = (short)PalladiumValue;
-            Main.tileValue[108] = (short)MythrilValue;
-            Main.tileValue[222] = (short)OrichalcumValue;
-            Main.tileValue[111] = (short)AdamantiteValue;
-            Main.tileValue[223] = (short)TitaniumValue;
-            Main.tileValue[211] = (short)ChlorophyteValue;
-            Main.tileValue[12] = (short)LifeCrystalValue;
-            Main.tileValue[236] = (short)LifeFruitValue;
+            Main.tileOreFinderPriority[28] = (short)PotValue;
+            Main.tileOreFinderPriority[407] = (short)SturdyFossilValue;
+            Main.tileOreFinderPriority[404] = (short)DesertFossilValue;
+            Main.tileOreFinderPriority[7] = (short)CopperValue;
+            Main.tileOreFinderPriority[166] = (short)TinValue;
+            Main.tileOreFinderPriority[6] = (short)IronValue;
+            Main.tileOreFinderPriority[167] = (short)LeadValue;
+            Main.tileOreFinderPriority[9] = (short)SilverValue;
+            Main.tileOreFinderPriority[168] = (short)TungstenValue;
+            Main.tileOreFinderPriority[37] = (short)MeteoriteValue;
+            Main.tileOreFinderPriority[22] = (short)DemoniteValue;
+            Main.tileOreFinderPriority[204] = (short)CrimtaneValue;
+            Main.tileOreFinderPriority[8] = (short)GoldValue;
+            Main.tileOreFinderPriority[169] = (short)PlatinumValue;
+            Main.tileOreFinderPriority[21] = (short)ChestValue;
+            Main.tileOreFinderPriority[467] = (short)ChestValue;
+            Main.tileOreFinderPriority[441] = (short)TrappedChestValue;
+            Main.tileOreFinderPriority[468] = (short)TrappedChestValue;
+            Main.tileOreFinderPriority[107] = (short)CobaltValue;
+            Main.tileOreFinderPriority[221] = (short)PalladiumValue;
+            Main.tileOreFinderPriority[108] = (short)MythrilValue;
+            Main.tileOreFinderPriority[222] = (short)OrichalcumValue;
+            Main.tileOreFinderPriority[111] = (short)AdamantiteValue;
+            Main.tileOreFinderPriority[223] = (short)TitaniumValue;
+            Main.tileOreFinderPriority[211] = (short)ChlorophyteValue;
+            Main.tileOreFinderPriority[227] = (short)StrangePlantValue;
+            Main.tileOreFinderPriority[12] = (short)LifeCrystalValue;
+            Main.tileOreFinderPriority[236] = (short)LifeFruitValue;
 
             if (GemsEnabled)
             {
-                Main.tileValue[67] = (short)AmethystValue;
-                Main.tileValue[66] = (short)TopazValue;
-                Main.tileValue[63] = (short)SapphireValue;
-                Main.tileValue[65] = (short)EmeraldValue;
-                Main.tileValue[64] = (short)RubyValue;
-                Main.tileValue[68] = (short)DiamondValue;
+                Main.tileOreFinderPriority[67] = (short)AmethystValue;
+                Main.tileOreFinderPriority[66] = (short)TopazValue;
+                Main.tileOreFinderPriority[63] = (short)SapphireValue;
+                Main.tileOreFinderPriority[65] = (short)EmeraldValue;
+                Main.tileOreFinderPriority[64] = (short)RubyValue;
+                Main.tileOreFinderPriority[68] = (short)DiamondValue;
             }
             else
             {
                 for (int i = 63; i <= 68; i++)
-                    Main.tileValue[i] = 0;
+                    Main.tileOreFinderPriority[i] = 0;
             }
         }
     }
