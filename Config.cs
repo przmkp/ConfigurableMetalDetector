@@ -1,20 +1,7 @@
-﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Linq;
-using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using System.ComponentModel;
-using System.Linq;
-using System.Runtime.Serialization;
 using Terraria;
-using Terraria.ID;
-using Terraria.ModLoader;
 using Terraria.ModLoader.Config;
-using Terraria.ModLoader.Config.UI;
-using Terraria.UI;
 
 namespace ConfigurableMetalDetector
 {
@@ -203,46 +190,46 @@ namespace ConfigurableMetalDetector
 
         public override void OnChanged()
         {
-            Main.tileValue[28] = (short)PotValue;
-            Main.tileValue[7] = (short)CopperValue;
-            Main.tileValue[166] = (short)TinValue;
-            Main.tileValue[6] = (short)IronValue;
-            Main.tileValue[167] = (short)LeadValue;
-            Main.tileValue[9] = (short)SilverValue;
-            Main.tileValue[168] = (short)TungstenValue;
-            Main.tileValue[37] = (short)MeteoriteValue;
-            Main.tileValue[22] = (short)DemoniteValue;
-            Main.tileValue[204] = (short)CrimtaneValue;
-            Main.tileValue[407] = (short)SturdyFossilValue;
-            Main.tileValue[8] = (short)GoldValue;
-            Main.tileValue[169] = (short)PlatinumValue;
-            Main.tileValue[21] = (short)ChestValue;
-            Main.tileValue[467] = (short)ChestValue;
-            Main.tileValue[441] = (short)ChestValue;
-            Main.tileValue[468] = (short)ChestValue;
-            Main.tileValue[107] = (short)CobaltValue;
-            Main.tileValue[221] = (short)PalladiumValue;
-            Main.tileValue[108] = (short)MythrilValue;
-            Main.tileValue[222] = (short)OrichalcumValue;
-            Main.tileValue[111] = (short)AdamantiteValue;
-            Main.tileValue[223] = (short)TitaniumValue;
-            Main.tileValue[211] = (short)ChlorophyteValue;
-            Main.tileValue[12] = (short)LifeCrystalValue;
-            Main.tileValue[236] = (short)LifeFruitValue;
+            Main.tileOreFinderPriority[28] = (short)PotValue;
+            Main.tileOreFinderPriority[7] = (short)CopperValue;
+            Main.tileOreFinderPriority[166] = (short)TinValue;
+            Main.tileOreFinderPriority[6] = (short)IronValue;
+            Main.tileOreFinderPriority[167] = (short)LeadValue;
+            Main.tileOreFinderPriority[9] = (short)SilverValue;
+            Main.tileOreFinderPriority[168] = (short)TungstenValue;
+            Main.tileOreFinderPriority[37] = (short)MeteoriteValue;
+            Main.tileOreFinderPriority[22] = (short)DemoniteValue;
+            Main.tileOreFinderPriority[204] = (short)CrimtaneValue;
+            Main.tileOreFinderPriority[407] = (short)SturdyFossilValue;
+            Main.tileOreFinderPriority[8] = (short)GoldValue;
+            Main.tileOreFinderPriority[169] = (short)PlatinumValue;
+            Main.tileOreFinderPriority[21] = (short)ChestValue;
+            Main.tileOreFinderPriority[467] = (short)ChestValue;
+            Main.tileOreFinderPriority[441] = (short)ChestValue;
+            Main.tileOreFinderPriority[468] = (short)ChestValue;
+            Main.tileOreFinderPriority[107] = (short)CobaltValue;
+            Main.tileOreFinderPriority[221] = (short)PalladiumValue;
+            Main.tileOreFinderPriority[108] = (short)MythrilValue;
+            Main.tileOreFinderPriority[222] = (short)OrichalcumValue;
+            Main.tileOreFinderPriority[111] = (short)AdamantiteValue;
+            Main.tileOreFinderPriority[223] = (short)TitaniumValue;
+            Main.tileOreFinderPriority[211] = (short)ChlorophyteValue;
+            Main.tileOreFinderPriority[12] = (short)LifeCrystalValue;
+            Main.tileOreFinderPriority[236] = (short)LifeFruitValue;
 
             if (GemsEnabled)
             {
-                Main.tileValue[67] = (short)AmethystValue;
-                Main.tileValue[66] = (short)TopazValue;
-                Main.tileValue[63] = (short)SapphireValue;
-                Main.tileValue[65] = (short)EmeraldValue;
-                Main.tileValue[64] = (short)RubyValue;
-                Main.tileValue[68] = (short)DiamondValue;
+                Main.tileOreFinderPriority[67] = (short)AmethystValue;
+                Main.tileOreFinderPriority[66] = (short)TopazValue;
+                Main.tileOreFinderPriority[63] = (short)SapphireValue;
+                Main.tileOreFinderPriority[65] = (short)EmeraldValue;
+                Main.tileOreFinderPriority[64] = (short)RubyValue;
+                Main.tileOreFinderPriority[68] = (short)DiamondValue;
             }
             else
             {
                 for (int i = 63; i <= 68; i++)
-                    Main.tileValue[i] = 0;
+                    Main.tileOreFinderPriority[i] = 0;
             }
         }
     }
