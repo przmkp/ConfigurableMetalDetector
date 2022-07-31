@@ -1,4 +1,4 @@
-Modification for Terraria 1.3.5 using tModLoader
+Modification for Terraria 1.4 using tModLoader
 
 From mod description:
 Configurable Metal Detector is a simple mod that allows you to configure values used by Metal Detector to determine which item in your vicinity is the most valuable. It basically lets you change priority of the items displayed by Metal Detector. Higher value means higher priority.
