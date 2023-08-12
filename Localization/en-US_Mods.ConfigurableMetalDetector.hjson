@@ -1,0 +1,157 @@
+Configs: {
+	Config: {
+		DisplayName: Config
+
+		PotValue: {
+			Label: "[i:474] Pot"
+			Tooltip: ""
+		}
+
+		CopperValue: {
+			Label: "[i:12] Copper Ore"
+			Tooltip: ""
+		}
+
+		TinValue: {
+			Label: "[i:699] Tin Ore"
+			Tooltip: ""
+		}
+
+		IronValue: {
+			Label: "[i:11] Iron Ore"
+			Tooltip: ""
+		}
+
+		LeadValue: {
+			Label: "[i:700] Lead Ore"
+			Tooltip: ""
+		}
+
+		SilverValue: {
+			Label: "[i:14] Silver Ore"
+			Tooltip: ""
+		}
+
+		TungstenValue: {
+			Label: "[i:701] Tungsten Ore"
+			Tooltip: ""
+		}
+
+		MeteoriteValue: {
+			Label: "[i:116] Meteorite"
+			Tooltip: ""
+		}
+
+		DemoniteValue: {
+			Label: "[i:56] Demonite Ore"
+			Tooltip: ""
+		}
+
+		CrimtaneValue: {
+			Label: "[i:880] Crimtane Ore"
+			Tooltip: ""
+		}
+
+		SturdyFossilValue: {
+			Label: "[i:3380] Sturdy Fossil"
+			Tooltip: ""
+		}
+
+		GoldValue: {
+			Label: "[i:13] Gold Ore"
+			Tooltip: ""
+		}
+
+		PlatinumValue: {
+			Label: "[i:702] Platinum Ore"
+			Tooltip: ""
+		}
+
+		ChestValue: {
+			Label: "[i:48] Chest"
+			Tooltip: ""
+		}
+
+		CobaltValue: {
+			Label: "[i:364] Cobalt Ore"
+			Tooltip: ""
+		}
+
+		PalladiumValue: {
+			Label: "[i:1104] Palladium Ore"
+			Tooltip: ""
+		}
+
+		MythrilValue: {
+			Label: "[i:365] Mythril Ore"
+			Tooltip: ""
+		}
+
+		OrichalcumValue: {
+			Label: "[i:1105] Orichalcum Ore"
+			Tooltip: ""
+		}
+
+		AdamantiteValue: {
+			Label: "[i:366] Adamantite Ore"
+			Tooltip: ""
+		}
+
+		TitaniumValue: {
+			Label: "[i:1106] Titanium Ore"
+			Tooltip: ""
+		}
+
+		ChlorophyteValue: {
+			Label: "[i:947] Chlorophyte Ore"
+			Tooltip: ""
+		}
+
+		LifeCrystalValue: {
+			Label: "[i:29] Life Crystal"
+			Tooltip: ""
+		}
+
+		LifeFruitValue: {
+			Label: "[i:1291] Life Fruit"
+			Tooltip: ""
+		}
+
+		Headers.Gems: Gems Header
+
+		GemsEnabled: {
+			Label: Enable gem detection
+			Tooltip: ""
+		}
+
+		AmethystValue: {
+			Label: "[i:181] Amethyst"
+			Tooltip: ""
+		}
+
+		TopazValue: {
+			Label: "[i:180] Topaz"
+			Tooltip: ""
+		}
+
+		SapphireValue: {
+			Label: "[i:177] Sapphire"
+			Tooltip: ""
+		}
+
+		EmeraldValue: {
+			Label: "[i:179] Emerald"
+			Tooltip: ""
+		}
+
+		RubyValue: {
+			Label: "[i:178] Ruby"
+			Tooltip: ""
+		}
+
+		DiamondValue: {
+			Label: "[i:182] Diamond"
+			Tooltip: ""
+		}
+	}
+}
